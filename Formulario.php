@@ -78,7 +78,7 @@
                 <br><br>
                 <button type="reset">Limpar</button>
                 <br><br>
-                <button type="button" onclick="window.location.href='PaginaInicial.php'">Voltar</button>
+                <button type="button" onclick="window.location.href='PaginaInicial.html'">Voltar</button>
                 </fieldset>
             </form>
         </div>

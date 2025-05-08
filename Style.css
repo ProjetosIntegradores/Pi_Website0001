@@ -85,3 +85,53 @@ button{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+.inputsubmit{
+    background-color: #00d9ff;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    width: 100%;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+/* Estilo do contêiner do carrossel */
+        .carousel {
+            width: 100%;
+            max-width: 600px;
+            margin: auto;
+            overflow: hidden;
+            position: relative;
+        }
+
+        /* Estilo das imagens */
+        .carousel img {
+            width: 100%;
+            display: none;
+        }
+
+        /* Exibe apenas a imagem ativa */
+        .carousel img.active {
+            display: block;
+        }
+
+        /* Botões de navegação */
+        .carousel .prev, .carousel .next {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .carousel .prev {
+            left: 10px;
+        }
+
+        .carousel .next {
+            right: 10px;
+        }
