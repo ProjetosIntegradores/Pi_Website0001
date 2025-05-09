@@ -1,7 +1,82 @@
 body{
+    background-color: rgba(9, 37, 75, 0.8);
     color: white;
-    background-color: rgba(47, 103, 175, 0.8);
-    font-family: Arial, Helvetica, sans-serif;;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    padding-top: 60px;
+}
+a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Cor do texto dos links */
+    transition: color 0.3s; /* Adiciona uma transição suave ao passar o mouse */
+}
+a:hover {
+color: #6984ff96;}
+.navbar {
+    position: fixed; /* Fixa a barra no topo */
+    top: 0; /* Define a posição no topo */
+    left: 0; /* Alinha à esquerda */
+    width: 100%; /* Faz a barra cobrir toda a largura da página */
+    background-color: #333; /* Cor de fundo da barra */
+    color: white; /* Cor do texto */
+    padding: 10px 0; /* Espaçamento interno */
+    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+}
+
+.navbar ul {
+    list-style: none; /* Remove os marcadores da lista */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Exibe os itens em linha */
+    justify-content: center; /* Centraliza os itens */
+}
+
+.navbar li {
+    margin: 0 15px; /* Espaçamento entre os itens */
+}
+
+.navbar a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: white; /* Cor do texto dos links */
+    font-weight: bold;
+    transition: color 0.3s; /* Adiciona uma transição suave ao passar o mouse */
+}
+
+.navbar a:hover {
+    color: #5877ff; /* Cor dos links ao passar o mouse */
+}
+.box-destaque {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo claro para destaque */
+    border: 2px solid #ffffff; /* Borda escura */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 20px; /* Espaçamento interno */
+    margin: 20px auto; /* Espaçamento externo e centralização */
+    max-width: 800px; /* Largura máxima */
+    box-shadow: 0 4px 8px rgba(27, 23, 216, 0.219); /* Sombra para destaque */
+    text-align: center; /* Centraliza o texto */
+}
+
+.box-destaque h3 {
+    color: #ffffff; /* Cor do título */
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+.box-destaque p {
+    color: #ffffff; /* Cor do texto */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+}
+
+.box-destaque video {
+    margin-top: 15px; /* Espaçamento acima do vídeo */
+    border-radius: 8px; /* Bordas arredondadas no vídeo */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra no vídeo */
 }
 ul{
     display: flex;
@@ -24,6 +99,7 @@ footer{
     text-align: center;
     font-size: 15px;
     color: white;
+    width: 100%;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
@@ -96,6 +172,15 @@ button{
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+img, video, iframe {
+    display: block;
+    margin: 0 auto;
+}
+.icone-arredondado {
+    border-radius: 50%; /* Torna a imagem circular */
+    border: 2px solid #ddd; /* Adiciona uma borda ao redor do ícone */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
+}
 /* Estilo do contêiner do carrossel */
         .carousel {
             width: 100%;
@@ -103,12 +188,15 @@ button{
             margin: auto;
             overflow: hidden;
             position: relative;
+            text-align: center;
         }
 
         /* Estilo das imagens */
         .carousel img {
             width: 100%;
-            display: none;
+            display: none; 
+            opacity: 0.8; 
+            transition: opacity 2s ease-in-out; /* Adiciona uma transição suave de opacidade */
         }
 
         /* Exibe apenas a imagem ativa */
@@ -118,22 +206,26 @@ button{
 
         /* Botões de navegação */
         .carousel .prev, .carousel .next {
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-            background-color: rgba(0, 0, 0, 0.5);
-            color: white;
-            border: none;
-            padding: 10px;
-            cursor: pointer;
+        position: absolute;
+        top: 0; /* Faz as setas cobrirem todo o slide verticalmente */
+        left: 0; /* Para o botão "prev" */
+        right: 0; /* Para o botão "next" */
+        width: 50%; /* Cada botão cobre metade do slide */
+        height: 100%; /* Cobre toda a altura do slide */
+        background-color: transparent; /* Torna as setas invisíveis */
+        border: none;
+        cursor: pointer;
+        z-index: 1; /* Garante que as setas fiquem acima das imagens */
         }
 
         .carousel .prev {
-            left: 10px;
+        left: 0;
+        right: auto;
         }
 
         .carousel .next {
-            right: 10px;
+        right: 0;
+        left: auto;
         }
 .table-bg {
     color: white; /* Cor do texto */
