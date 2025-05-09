@@ -135,3 +135,23 @@ button{
         .carousel .next {
             right: 10px;
         }
+.table-bg {
+    color: white; /* Cor do texto */
+    background-color: rgba(0, 0, 0, 0.7); /* Cor de fundo da tabela */
+    border: 1px solid #ffffff; /* Borda branca */
+}
+
+.table-bg th {
+    background-color: rgba(47, 103, 175, 0.9); /* Cor de fundo do cabeçalho */
+    color: white; /* Cor do texto do cabeçalho */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px;
+}
+
+.table-bg td {
+    background-color: rgba(47, 103, 175, 0.5); /* Cor de fundo das células */
+    color: white; /* Cor do texto das células */
+    text-align: center; /* Centraliza o texto */
+    padding: 10px;
+    border: 1px solid #ffffff; /* Borda branca entre as células */
+}

@@ -1,4 +1,6 @@
 <?php
+// Inicia a sessão
+session_start();
 if (isset($_POST['submit']) && !empty($_POST['usuario']) && !empty($_POST['senha'])) {
     // Inclui a conexão com o banco de dados
     include_once('conexao.php');
@@ -15,13 +17,19 @@ if (isset($_POST['submit']) && !empty($_POST['usuario']) && !empty($_POST['senha
 
     // Verifica se o usuário existe
     if ($result->num_rows > 0) {
+        $_SESSION['usuario'] = $usuario;
+        $_SESSION['senha'] = $senha;
+        // Se o usuário e a senha estiverem corretos, armazena os dados na sessão
         // Login bem-sucedido
         echo "Login realizado com sucesso!";
-        header('Location: PaginaInicial.html'); // Redireciona para a página inicial
+        header('Location: Sistema.php'); // Redireciona para a página inicial
         $stmt->close();
         $conexao->close();
         exit();
     } else {
+        unset($_SESSION['usuario']);
+        unset($_SESSION['senha']);
+        // Se o usuário ou a senha estiverem incorretos, exibe uma mensagem de erro
         // Login falhou
         echo "<script>alert('Usuário ou senha incorretos!');</script>";
         $stmt->close();
