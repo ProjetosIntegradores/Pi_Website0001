@@ -88,8 +88,9 @@ Os valores '1', 'admin', '123' podem ser alterados para as respectivas customiza
 
 Também há a opção de executar o `scriptCreateBD.sql`, mas será necessário instalar o MySQL Workbench.
 
-## Referências e Citações
+Por fim, coloque todos os arquivos deste repertorio dentro da pasta xampp/htdocs .O site deve funcionar agora.
 
-* https://www.youtube.com/playlist?list=PLSHNk_yA5fNjoIRNHV-3FprsN3NWPcnnK  
-** https://github.com/piunivespintegrador/pi2_univesp  
-***
+## Referências e Citações
+ *Gustavo Neitzke, Sistema com Login, Cadastro, Sessões e Listagem de dados com CRUD, https://www.youtube.com/playlist?list=PLSHNk_yA5fNjoIRNHV-3FprsN3NWPcnnK  
+ **Lucas C. Achcar, Univesp PI_2, https://github.com/piunivespintegrador/pi2_univesp  
+***UNIVESP, Eixo de Computação | Banco de Dados (2020.1),https://www.youtube.com/playlist?list=PLxI8Can9yAHeZcEzZElhxwsQTf9MaG6sS

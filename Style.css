@@ -26,7 +26,7 @@ color: #6984ff96;}
     background-color: #333; /* Cor de fundo da barra */
     color: white; /* Cor do texto */
     padding: 10px 0; /* Espaçamento interno */
-    z-index: 1000; /* Garante que a barra fique acima de outros elementos */
+    z-index: 100; /* Garante que a barra fique acima de outros elementos */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adiciona uma sombra para destaque */
 }
 
@@ -133,6 +133,16 @@ legend{
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
     padding: 20px;
+}
+.box-search {
+color: white;
+width: 100%; /* Faz a box ocupar toda a largura disponível */
+    max-width: 600px; /* Define uma largura máxima */
+    margin: 20px auto; /* Centraliza horizontalmente e adiciona espaçamento externo */
+    padding: 10px; /* Adiciona espaçamento interno */
+    display: flex; /* Usa Flexbox para alinhar os elementos */
+    justify-content: space-between; /* Espaça os elementos dentro da box */
+    align-items: center; /* Alinha os elementos verticalmente */
 }
 .tela-login{
 background-color: rgba(0, 0, 0, 0.8);
