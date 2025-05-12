@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>Pagina Inicial</title>
+</head>
+<body> 
+    <header>
+    <nav>
+        <ul>
+            <li>
+                <a href="PaginaInicial.html">Pagina inicial</a>
+            </li>
+            <li>
+                <a href="TeladeLogin.php">Login</a>
+            </li>
+            <li>
+                <a href="Formulario.php">Cadastro de Clientes</a>
+            </li>
+        </ul>
+    </nav>
+    <br><br>
+    <h1>Bem-vindo ao TekTintas</h1>
+    <br><br>
+    </header>
+    <img src="imagens/IconeTekTintas.png" alt="Logo da TekTintas" width="150">
+        <h2>Quem Somos</h2>
+        <p>Somos uma loja dedicada a oferecer tintas, sprays, impermeabilizantes
+        ferramentas e acessorios. </p>
+        <br><br>
+        <h2>Missão</h2>
+        <p>Oferecer produtos de qualidade e com preço justo.</p>
+        <br><br>
+        <h3>A Loja Tek Tintas é Master ✅</h3>
+<p>Master em Economia, Master em Rendimento, Master em Qualidade, Master em Atendimento, 
+Master em Preços Baixos, e é claro, é a sua Revenda Master Sherwin Williams na Praia Grande.
+📍 Estamos na Av. Pres. Kennedy, 1116 - Guilhermina na Praia Grande.
+Compre também sem sair de casa pelo WhatsApp ou Fone 📞 (13) 3474-4963.
+Vem pra @lojatektintas, a única Master de verdade! ✅</p>
+<video width="320" height="640" controls>
+    <source src="Imagens\PromocaoTekTintas.mp4" type="video/mp4">
+    Seu navegador não suporta a tag de vídeo.
+</video> </p>
+        <h2>Produtos</h2>
+        <p>Na loja TekTintas você encontra uma variedade de produtos, como:</p>
+        <div class="carousel">
+        <img src="imagens/Imagem1.jpg" alt="Escolha Paleta" class="active">
+        <img src="imagens/Imagem2.jpg" alt="acessorios e Tintas">
+        <img src="imagens/Imagem3.jpg" alt="Altissimo Rendimento">
+        <button class="prev" onclick="prevSlide()">&#10094;</button>
+        <button class="next" onclick="nextSlide()">&#10095;</button>
+        </div>
+       <script>
+        // JavaScript para alternar entre as imagens
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.carousel img');
+
+        function showSlide(index) {
+            slides[currentSlide].classList.remove('active');
+            currentSlide = (index + slides.length) % slides.length; // Loop infinito
+            slides[currentSlide].classList.add('active');
+        }
+
+        function nextSlide() {
+            showSlide(currentSlide + 1);
+        }
+
+        function prevSlide() {
+            showSlide(currentSlide - 1);
+        }
+    </script>
+</div>
+        <h2>Contatos</h2>
+        <p>Telefone: (13) 3474-4963</p>
+        <p>WhatsApp: (13) 99666-3107</p>
+        <p>Email de contato: contato@lojatektintas.com.br</p>
+        <p>Endereço: Av.Pres.Kennedy 1116, Guilhermina - Praia Grande - SP</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3644.76484136939!2d-46.42364092387822!3d-24.004079778007686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce1c359ef3687b%3A0x3e3a9774150b09ea!2sAv.%20Pres.%20Kennedy%2C%201116%20-%20Guilhermina%2C%20Praia%20Grande%20-%20SP%2C%2011702-205!5e0!3m2!1spt-BR!2sbr!4v1746739208634!5m2!1spt-BR!2sbr" 
+        width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<footer><p>Venha conhecer nosso <a href="https://www.instagram.com/lojatektintas/" target="_blank">Instagram da TekTintas</a></p></footer>      
+</body>
+</html>
