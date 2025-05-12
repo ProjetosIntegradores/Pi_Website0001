@@ -25,7 +25,7 @@ Essa e minha primeira vez criando um site com banco de dados, tive diversas difi
 A principio usei Python, mas depois de falhar algumas vezes tentando fazer sem instrucoes troquei para php com
 
 ## Instalação e Configuração
-```
+
 Primeiro Baixe Xampp: https://www.apachefriends.org/pt_br/index.html
 ![Site onde baixa Xampp](Imagens do Projeto/BaixeXampp.png)
 
