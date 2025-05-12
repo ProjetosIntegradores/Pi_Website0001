@@ -9,13 +9,13 @@ Cliente TekTintas
 * [Página do Cliente]()
 
 ## Participantes do projeto:
-
+```
 Francisco Adilton de Oliveira
 Lucas Edson Santos Silva
 Yuri Chagas Sousa
 Fillipe de Oliveira Lemos
 Flavio Higor da Silva
-
+```
 ## Historia e Desenvolvimento
 
 Código do projeto integrador 1 foi feito em VisualStudioCode, MySQL Workbench e XAMPP.
@@ -25,7 +25,7 @@ Essa e minha primeira vez criando um site com banco de dados, tive diversas difi
 A principio usei Python, mas depois de falhar algumas vezes tentando fazer sem instrucoes troquei para php com
 
 ## Instalação e Configuração
-
+```
 Primeiro Baixe Xampp: https://www.apachefriends.org/pt_br/index.html
 ![Site onde baixa Xampp](Imagens do Projeto/BaixeXampp.png)
 
