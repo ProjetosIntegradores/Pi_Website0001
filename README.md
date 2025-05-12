@@ -1,62 +1,43 @@
 # Pi_Website0001
 Site aplicativo do projeto integrador 1 no Univesp
+Cliente TekTintas
 
 ## Link Demo:
 
-### Página pública
+### Página Inicial
 
 * [Página do Cliente]()
 
-### Página administração
-
-* [Página da Administração]()
-
-```
-OBS: A página de administração não esta protegido pois é apenas um trabalho para o projeto integrador e não algo comercial.
-```
-
 ## Participantes do projeto:
 
-```
 Francisco Adilton de Oliveira
 Lucas Edson Santos Silva
 Yuri Chagas Sousa
 Fillipe de Oliveira Lemos
 Flavio Higor da Silva
-```
+
+## Historia e Desenvolvimento
+
+Código do projeto integrador 1 foi feito em VisualStudioCode, MySQL Workbench e XAMPP.
+
+Essa e minha primeira vez criando um site com banco de dados, tive diversas dificuldades durante o desenvolvimento, porem com ajuda de videos no youtube, repertorios do github consegui fazer um banco de dados funcional.
+
+A principio usei Python, mas depois de falhar algumas vezes tentando fazer sem instrucoes troquei para php com
 
 ## Instalação e Configuração
 
-Código do projeto integrador 1 foi feito em VisualStudioCode
+Primeiro Baixe Xampp: https://www.apachefriends.org/pt_br/index.html
+![Site onde baixa Xampp](Imagens do Projeto/BaixeXampp.png)
 
-Faça a instalação do VisualStudioCode
+Instale Xampp:
+![Ao abrir o instalador precione next](Imagens do Projeto/passo1.png)
+![Para o Funcionamento do site somente o MYSQL e phpMyAdmin sao necessarios](Imagens do Projeto/passo2.png)
+![Escolha uma pasta onde o Xampp eo site vao ficar hospedados](Imagens do Projeto/passo3.png)
 
-Faça a instalação do MySQL (Docker)
+Inicie um servidor localhost no Xampp
+![Ao abrir o Xampp Inicie o servidor](Imagens do Projeto/Iniciehospedagem.png)
 
-Crie o banco de dados do projeto
+Crie o banco de dados do projeto: aqui a dois metodos
+Abra o phpMyAdmin em localhost/phpmyadmin
 
-```
-CREATE DATABASE data_base CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
-CREATE USER 'seu_usuario'@'localhost' IDENTIFIED BY 'sua_senha';
-GRANT ALL PRIVILEGES ON meu_banco_django.* TO 'seu_usuario'@'localhost';
-FLUSH PRIVILEGES;
-```
 
-Isso criará um banco de dados chamado ```data_base``` com o usuário ```seu_usuario``` com a senha ```sua_senha```
-
-Entre na pasta do projeto 
-
-```
-cd data_base
-```
-
-Faça uma copia do arquivo ```.env-exemplo``` e crie um arquivo  ```.env``` na mesma pasta, abra o arquivo e edite as credenciais do MySQL
-
-```
-DB_NAME=data_base       # nome do banco de dados
-DB_USER=seu_usuario     # usuário do banco de dados
-DB_PASSWORD=sua_senha   # senha do banco de dados
-DB_HOST=127.0.0.1       # ou o IP do servidor de banco de dados
-DB_PORT=3306            # porta padrão do MySQL
-}
-```
