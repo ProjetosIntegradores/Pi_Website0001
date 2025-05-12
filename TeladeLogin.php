@@ -9,11 +9,14 @@
 <body>
     <div class="tela-login">
         <h1>Login</h1>
-         <input type="text" placeholder="Usuário"> 
+        <form action="processa_login.php" method="POST">
+         <input type="text" name="usuario" placeholder="Usuário"> 
         <br><br>
-         <input type="password" placeholder="Senha"> 
+         <input type="password" name= "senha" placeholder="Senha"> 
         <br><br>
-        <button>Enviar</button>
+        <input class="inputsubmit" type="submit" name="submit" value="Entrar">
+        <br><br>
+        <button onclick="window.location.href='PaginaInicial.html';">Voltar</button>
     </div>
 </body>
 </html>
