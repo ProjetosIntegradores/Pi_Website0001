@@ -44,7 +44,7 @@ Selecione as opções de MySQL e phpMyAdmin, depois pressione "Next":
 
 Escolha o diretório onde o XAMPP será instalado:
 
-![Escolha uma pasta onde o XAMPP e o site vão ficar hospedados](imagens/passo3.png)
+![Escolha uma pasta onde o XAMPP e o site vão ficar hospedados](imagens/passo3.jpg)
 
 Inicie o aplicativo XAMPP e ative o servidor localhost:
 

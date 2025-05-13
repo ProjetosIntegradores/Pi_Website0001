@@ -6,7 +6,5 @@ $db_Name = "formulario_clientes"; // Nome do banco de dados
 $conexao = new mysqli( $db_host, $db_username, $db_password, $db_Name);
 if ($conexao->connect_error) {
     die("Connection failed: " . $conexao->connect_error);
-} else {
-    echo "Connected successfully"; // Exibe a mensagem se a conexão for bem-sucedida
 }
 ?>
