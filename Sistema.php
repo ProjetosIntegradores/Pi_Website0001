@@ -1,18 +1,27 @@
 <?php
 session_start();
 include_once('conexao.php');
-if ((!isset($_SESSION['usuario']) == true) and (!isset($_SESSION['senha']) == true))
-{
+
+// Verifica se o usuário está logado
+if ((!isset($_SESSION['usuario']) == true) and (!isset($_SESSION['senha']) == true)) {
     unset($_SESSION['usuario']);
     unset($_SESSION['senha']);
     header('Location: TeladeLogin.php');
     exit();
 } else {
-    $logado = $_SESSION['usuario'];}
-    $sql = "SELECT * FROM clientes oRDER BY id DESC";
-    $result = $conexao->query($sql);
-?>
+    $logado = $_SESSION['usuario'];
+}
 
+// Verifica se há um termo de pesquisa
+if (!empty($_GET['search'])) {
+    $search = $_GET['search'];
+    $sql = "SELECT * FROM clientes WHERE nome LIKE '%$search%' OR email LIKE '%$search%' OR telefone LIKE '%$search%' ORDER BY id DESC";
+} else {
+    $sql = "SELECT * FROM clientes ORDER BY id DESC";
+}
+
+$result = $conexao->query($sql);
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -42,13 +51,14 @@ data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria
     ?>
     <br>
     <div class="box-search">
-        <input type="search" class="form-control w-25" placeholder="Pesquisar" id="pesquisar">
-        <button onclick="searchData()" class="btn btn-primary">
-            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
-                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-            </svg>
-        </button>
-    </div>
+    <input type="search" class="form-control w-25" placeholder="Pesquisar" id="pesquisar">
+    <button onclick="searchData()" class="btn btn-primary">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 
+            1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>
+    </button>
+</div>
     <div class="m-5">
         <table class="table text-white table-bg">
             <thead>
@@ -82,5 +92,12 @@ data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria
             </tbody>
         </table>
     </div>
-    </head>
-    </html>
+    </body>
+<script>
+    function searchData() {
+        const search = document.getElementById('pesquisar').value;
+        window.location = 'Sistema.php?search=' + search;
+    }
+</script>
+</head>
+</html>
