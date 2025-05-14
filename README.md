@@ -2,13 +2,7 @@
 Site aplicativo do projeto integrador 1 na Univesp:  
 Cliente TekTintas
 
-## Link Demo:
-
 ### Página Inicial
-
-* [Página Inicial]()
-Para logar no gerenciador de sistema use:  
-usuário: admin, senha: 123
 
 ## Participantes do projeto:
 ```
@@ -21,11 +15,19 @@ Flavio Higor da Silva
 
 ## História e Desenvolvimento
 
-O código do projeto integrador 1 foi desenvolvido no Visual Studio Code, MySQL Workbench e XAMPP.
+O código do Projeto Integrador 1 foi desenvolvido no Visual Studio Code, MySQL Workbench, XAMPP... e agora Docker Desktop.
 
 Essa é minha primeira vez criando um site com banco de dados. Tive diversas dificuldades durante o desenvolvimento, porém, com a ajuda de vídeos no YouTube*, repositórios do GitHub** e cursos desta faculdade***, consegui criar um banco de dados funcional.
 
 A princípio, usei Python, mas depois de falhar algumas vezes tentando fazer sem instruções, troquei para PHP para melhor seguir outros desenvolvedores.
+
+Apesar de o website ser simples, ele cumpre os requisitos do cliente e do projeto, que eram: 
+
+A solução para o cliente: Criar um website que promovesse a loja e um aplicativo onde os seus usuários pudessem colocar suas informações (clientes do cliente) para futuras promoções e contatos.
+
+Já o objetivo do projeto era: Desenvolvimento de um software com framework web que utilizasse noções de banco de dados, praticando controle de versão. Esse website possui um formulário que recebe e envia os dados para uma tabela em SQL que armazena e pode ser editada pelos administradores definidos pelo código. Além disso, esse projeto usou o GitHub para fazer o backup das várias versões e formas que o projeto teve.
+
+Isso deve ser o suficiente para o PI1, mas vou continuar desenvolvendo este projeto para cumprir os requisitos de outro projeto.
 
 ## Instalação e Configuração
 
@@ -70,11 +72,15 @@ CREATE TABLE IF NOT EXISTS clientes (
     genero ENUM('masculino','feminino','outro') NOT NULL)
 ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+INSERT INTO `clientes` (`id`, `nome`, `email`, `telefone`, `endereco`, `data_nascimento`, `genero`) VALUES 
+('1', 'João Silva', 'joao@gmail.com', '11987654321', 'Rua A, 123', '1990-01-01', 'masculino');
+
 CREATE TABLE IF NOT EXISTS usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     usuario VARCHAR(50) NOT NULL,
     senha VARCHAR(255) NOT NULL 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
 ```
 
 Para poder acessar o sistema, insira um usuário.  
@@ -88,7 +94,8 @@ Os valores '1', 'admin', '123' podem ser alterados para as respectivas customiza
 
 Também há a opção de executar o `scriptCreateBD.sql`, mas será necessário instalar o MySQL Workbench.
 
-Por fim, coloque todos os arquivos deste repertorio dentro da pasta xampp/htdocs .O site deve funcionar agora.
+Por fim, coloque todos os arquivos deste repositório dentro da pasta `xampp/htdocs`. O site agora deve estar acessível no navegador através do endereço:
+http://localhost/PaginaInicial.html
 
 ## Referências e Citações
  *Gustavo Neitzke, Sistema com Login, Cadastro, Sessões e Listagem de dados com CRUD, https://www.youtube.com/playlist?list=PLSHNk_yA5fNjoIRNHV-3FprsN3NWPcnnK  
