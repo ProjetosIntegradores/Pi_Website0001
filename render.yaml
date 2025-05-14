@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: Pi_Website0001
+    env: php
+    plan: free
+    buildCommand: ""
+    startCommand: php -S 0.0.0.0:80 -t .
+    envVars:
+      - key: DATABASE_URL
+        value: "mysql://usuario:senha@host:porta/nome_do_banco"
+
+databases:
+  - name: Pi_Website0001_DB
+    plan: free
+    engine: mysql
+    version: 8.0
+    region: oregon

@@ -74,7 +74,7 @@
                 <input type="radio" name="genero" id="outro" value="outro" required>
                 <label for="outro">Outro</label>
                 <br><br>
-                <button type="submit" name="submit">Enviar</button> <!-- Adicionado name="submit" -->
+                <button type="submit" name="submit" id="submit">Enviar</button> <!-- Adicionado name="submit" -->
                 <br><br>
                 <button type="reset">Limpar</button>
                 <br><br>

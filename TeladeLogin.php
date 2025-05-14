@@ -16,7 +16,8 @@
         <br><br>
         <input class="inputsubmit" type="submit" name="submit" value="Entrar">
         <br><br>
-        <button onclick="window.location.href='PaginaInicial.html';">Voltar</button>
+        </form>
+        <a href="PaginaInicial.html">Voltar</a>
     </div>
 </body>
 </html>
