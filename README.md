@@ -4,6 +4,10 @@ Cliente TekTintas
 
 ### Página Inicial
 
+* [Página do PI3](https://github.com/ProjetosIntegradores/Pi_Website0003)
+
+* [Página do Render](https://gestao-pi-render.onrender.com/)
+
 ## Participantes do projeto:
 ```
 Francisco Adilton de Oliveira  
@@ -23,11 +27,14 @@ A princípio, usei Python, mas depois de falhar algumas vezes tentando fazer sem
 
 Apesar de o website ser simples, ele cumpre os requisitos do cliente e do projeto, que eram: 
 
-A solução para o cliente: Criar um website que promovesse a loja e um aplicativo onde os seus usuários pudessem colocar suas informações (clientes do cliente) para futuras promoções e contatos.
+**A solução para o cliente:** Criar um website que promovesse a loja e um aplicativo onde os seus usuários pudessem colocar suas informações (clientes do cliente) para futuras promoções e contatos.
 
-Já o objetivo do projeto era: Desenvolvimento de um software com framework web que utilizasse noções de banco de dados, praticando controle de versão. Esse website possui um formulário que recebe e envia os dados para uma tabela em SQL que armazena e pode ser editada pelos administradores definidos pelo código. Além disso, esse projeto usou o GitHub para fazer o backup das várias versões e formas que o projeto teve.
+**Já o objetivo do projeto era:** Desenvolvimento de um software com framework web que utilizasse noções de banco de dados, praticando controle de versão. 
+
+Esse website possui um formulário que recebe e envia os dados para uma tabela em SQL que armazena e pode ser editada pelos administradores definidos pelo código. Além disso, esse projeto usou o GitHub para fazer o backup das várias versões e formas que o projeto teve.
 
 Isso deve ser o suficiente para o PI1, mas vou continuar desenvolvendo este projeto para cumprir os requisitos de outro projeto.
+Terminado de fazer o PI3, coloquei a parte do PI3 no render, o cliente achou ok, mas preferiu o do PI1.
 
 ## Instalação e Configuração
 
