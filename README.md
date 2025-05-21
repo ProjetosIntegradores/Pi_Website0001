@@ -19,7 +19,7 @@ Flavio Higor da Silva
 
 ## História e Desenvolvimento
 
-O código do Projeto Integrador 1 foi desenvolvido no Visual Studio Code, MySQL Workbench, XAMPP... e agora Docker Desktop.
+O código do Projeto Integrador 1 foi desenvolvido no Visual Studio Code, MySQL Workbench, XAMPP.
 
 Essa é minha primeira vez criando um site com banco de dados. Tive diversas dificuldades durante o desenvolvimento, porém, com a ajuda de vídeos no YouTube*, repositórios do GitHub** e cursos desta faculdade***, consegui criar um banco de dados funcional.
 
